@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    background: linear-gradient(rgba(15,23,42,0.65),rgba(15,23,42,0.65)),url(background\ image\ 3.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 5%;
+    color: white;
+   
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    min-height: 70px;
+    width: 100vw;
+    background-color: #0f172a;
+    padding: 12px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+.heading{
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 80px;
+    display: inline-block;
+
+}
+#links{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    flex: 1;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    
+}
+#btn3{
+    font-size: 18px;
+    color: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: rgb(80, 78, 78);
+    cursor: pointer;
+}
+#btn4{
+    font-size: 18px;
+    color: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: rgb(14, 14, 182);
+    margin: 10px;
+    cursor: pointer;
+}
+#btn4:hover{
+    font-size: 18px;
+    color: white;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: rgb(14, 14, 182);
+    margin: 10px;
+}
+.heading:hover{
+    font-size: 30px;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+.link:hover{
+    color: aqua;
+    transform: rotateY(-2px);
+
+}
+#btn3:hover{
+    font-size: 22px;
+    transition: font-size 1s ease-in 0s;
+    font-style: italic;
+
+}
+#text{
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.para1{
+    font-style: italic;
+    font-size: 50px;
+    margin: 10px;
+    color: black;
+    
+
+}
+/* .para1{
+    font-size: 60px;
+    transition: font-size 1s ease-in 1s;
+
+} */
+#btn1{
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+}
+#btn2{
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+}
+#btn1:hover{
+    background-color: blue;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#btn2:hover{
+    background-color: blue;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ #links {
+        order: 3;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    #cards-container{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .cards{
+        min-height: 250px;
+        width: 300px;
+        box-sizing: border-box;
+        border: 5px solid #64748b;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #1e293b;
+        color: white;
+    }
+   
+    .head{
+        font-size: 20px;
+        margin-bottom: 15px;
+        
+        
+    }
+    .cards p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+   
+    #btn5{
+        height: 30px;
+        width: 100px;
+        background-color: red;
+        border-radius: 10px;
+        margin-left: 90px;
+        margin-top: 30px;
+
+    }
+   
+   
+    #btn6{
+         height: 30px;
+        width: 100px;
+        background-color: red;
+        border-radius: 10px;
+        margin-left: 92px;
+        margin-top: 45px;
+    }
+    
+   
+    #btn7{
+         height: 30px;
+        width: 100px;
+        background-color: red;
+        border-radius: 10px;
+        margin-left: 92px;
+        margin-top: 45px;
+    }
+    #btn5:hover{
+        font-size: 15px;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    #btn6:hover{
+        font-size: 15px;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    #btn7:hover{
+        font-size: 15px;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    #card1:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 20px blue;
+
+    }
+    #card2:hover{
+         transform: scale(1.1);
+         box-shadow: 2px 2px 20px blue;
+    }
+    #card3:hover{
+         transform: scale(1.1);
+        box-shadow: 2px 2px 20px blue;
+    }
+    @media(max-width:600px){
+        #cards-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .cards{
+            width: 90%;
+            max-width: 280px;
+        }
+    }
+    #features{
+        padding: 60px 5%;
+        text-align: center;
+        background-color: #f4f6fa;
+        color: #222;
+    }
+    #features h2{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    #features>p{
+        font-size: 16px;
+        margin-bottom: 35px;
+        color: #555;
+    }
+    #features-container{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .feature-card{
+        flex: 1 1 220px;
+        max-width: 320px;
+        padding: 25px 20px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card h3{
+        font-size: 21px;
+        margin-bottom: 15px;
+        color: #2459c4;
+    }
+    .feature-card p{
+        font-size: 15px;
+        line-height: 1.6;
+        color: #555;
+    }
+    .feature-card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    @media(max-width:600px){
+        #features{
+            padding: 40px 5%;
+        }
+        #features h2{
+            font-size: 26px;
+        }
+        #features-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature-card{
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+    }
+    #testimonals{
+        padding: 60px 5%;
+        text-align: center;
+        background-color: #101827;
+        color: white;
+    }
+    #testimonals>h2{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    #testimonals>p{
+        color: #cbd5e1;
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+    #testimonals-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+    .testimonal-card{
+        flex: 1 1 220px;
+        max-width: 320px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .testimonal-card p{
+        font-size: 16px;
+        line-height: 1.7;
+        color: #e2e8f0;
+        margin-bottom: 20px;
+    }
+    .testimonal-card h3{
+        color: #60a5fa;
+        font-size: 17px;
+    }
+    .testimonal-card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    #faqs{
+        padding: 60px 5%;
+        background-color: #f4f6fa;
+        color: #222;
+        text-align: center;
+    }
+    #faqs h2{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    #faqs>p{
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 35px;
+    }
+    #faq-container{
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .faq-item{
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .faq-item h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #2459c4;
+    }
+    .faq-item p{
+        font-size: 15px;
+        line-height: 1.7;
+        color: #555;
+    }
+    .faq-item:hover{
+        border-color: #2459c4;
+        transition: border-color 0.3s ease;
+    }
+    @media(max-width:600px){
+        #faq{
+            padding: 40px 5%;
+        }
+        #faq h2{
+            font-size: 26px;
+        }
+        .faq-item{
+            padding: 16px;
+        }
+        .faq-item h3{
+            font-size: 16px;
+        }
+    }
+
+
+
